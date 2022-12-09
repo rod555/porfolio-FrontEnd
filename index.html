@@ -1,12 +1,248 @@
+<!-- Header con logo y en esquina opuesta links a redes y boton de edicion
+
+Body dividivo en al menos 5 cuerpos,
+principal con foto nombre e informacion personal basica
+segundo con la experiencia laboral
+tercero con educacion
+cuarto con hard y soft skills, este graficado (como usuario mostrar diferentes graficos?)
+quinto con proyectos realizados
+sexto con otra info
+
+El doucmento debe encerrarse por completo entre los tags html y los dos principales son luego head y body -->
+
+
 <!DOCTYPE html>
 <HTML>
+
   <head>
-    <title>Mi primer WEB</title>
+    <meta http-equiv=UA-Compatible” content="IE=edge">
+    <meta name="viewport” contents"width=device-width, initial-scale=1>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Rodrigo Y</title>
   </head>
+
   <body>
-    <div id="una capa">
-      <h1>Hola mundo!</h1>
-      <p>Este es un ejemplo del uso de HTML para crear un documento web que nuestro navegador es capaz de interpretar.</p>
+    <img src="./logosrequeridos.png">
+    
+    <button id="login" style="display:block" onclick="validarSuperuser()" >LogIn Superuser</button>
+    <button id="logout" style="display:none" onclick="logOut()">LogOut</button>
+    
+    <div class="card imagenFondo" id="first-card">
+
+        <div id="profile-background">
+          <img id="fotoFondo" src="linktoBckgFotoDB.jpg">
+          <input class="editBox" style="float:right" type="file" id="image-input-bckgrd" accept="image/jpeg, image/png, image/jpg" onselect="cambiarFoto(this.value,'fotoFondo')">  
+        </div>
+
+        <div id="info">
+          <img id="fotoPersonal" class="profile-image" src="linktoPersonalFotoDB.jpg">
+          <input class="editBox" type="file" id="image-input-profile" accept="image/jpeg, image/png, image/jpg" onselect="cambiarFoto(this,'fotoPersonal')"> 
+        </div>
+
+        
+        <div id="info-data">
+            <div>
+              <h1>Rodrigo Y</h1>
+
+              <div id="info-company">Ingeniero electrico y en electronica, UNLP</div>
+              <div id="info-contact">
+                <span id="residenciaActual">Link to ResidenciaEnDB</span>
+                <input class="editBox" id="edit-residencia" type="text" oninput="edicionDeParametros(this.value,'residenciaActual')"> 
+              </div>
+            </div>
+
+
+            <ul id="info-details">
+              <li><a href="#">
+                <img src="ico.jpg">
+                <h2>Link to PosicionActualDB</h2>
+                </a>
+              </li>
+              <li><a href="#">
+                <img src="ico.jpg">
+                <h2>Link to EmpresaActualDB</h2>
+              </a>
+              </li>
+            </ul>
+
+        </div>
+<!--
+        <div id="info-actions">
+          <button type="button" class="btn btn-primary">Tengo interés en</button>
+          <button type="button" class="btn btn-light">Anadir Seccion</button>
+          <button type="button" class="btn btn-light">Mas</button>
+        </div>
+    -->           
     </div>
-  </body>  
+
+    <!--Acerca de--><div class="card imagenFondo">
+        <div class="card-titles"> 
+          <h2>Acerca de</h2> 
+          
+        </div> 
+        <div> 
+            <p id="text-acercade">Link to PositionEnDB, Información de contacto</p> 
+        </div>
+        <div> 
+            <input class="editBox" id="edit-acercade" type="text" oninput="edicionDeParametros(this.value,'text-acercade')"> 
+        </div>
+    </div> 
+  
+    <!--Antecedentes laborales--><div class="card imagenFondo">
+        <div class="card-titles"> 
+          <h2>Antecedentes laborales</h2> 
+          
+        </div> 
+        <div> 
+            <p id="text-antecedentes">Link a los disitintos antecdentes en la DB</p> 
+        </div>
+        <div> 
+            <input class="editBox" id="edit-antecedentes" type="text" oninput="edicionDeParametros(this.value,'text-antecedentes')"> 
+        </div>
+    </div>
+
+    <!--Educacion--><div class="card imagenFondo">
+        <div class="card-titles"> 
+          <h2>Educacion</h2> 
+          
+        </div> 
+        <div> 
+            <p id="text-educacion">Link a los disitintos niveles educactivos en la DB</p> 
+        </div>
+        <div> 
+            <input class="editBox" id="edit-educacion" type="text" oninput="edicionDeParametros(this.value,'text-educacion')"> 
+        </div>
+    </div>
+
+    <!--Skilss--><div class="card imagenFondo">
+        <div class="card-titles"> 
+          <h2>Hard y soft skills</h2> 
+          
+        </div> 
+        <div> 
+            <p id="text-skills">Link a los disitintos skills en la DB</p> 
+        </div>
+        <div> 
+            <input class="editBox" id="edit-skils" type="text" oninput="edicionDeParametros(this.value,'text-skills')"> 
+        </div>
+    </div>
+
+    <!--Proyectos Realizados--><div class="card imagenFondo">
+        <div class="card-titles"> 
+          <h2>Proyectos Realizados</h2> 
+          
+        </div> 
+        <div> 
+            <p id="text-proyectos">Link a los distintos proyectos en la DB</p> 
+        </div>
+        <div> 
+            <input class="editBox" id="edit-proyectos" type="text" oninput="edicionDeParametros(this.value,'text-proyectos')""> 
+        </div>
+    </div>
+
+    <!--otros Intereses--><div class="card imagenFondo">
+        <div class="card-titles"> 
+          <h2>Otros intereses</h2> 
+          
+        </div> 
+        <div> 
+            <p id="text-otros">Link a los distintos intereses en la DB</p> 
+        </div>
+        <div> 
+            <input class="editBox" id="edit-otros" type="text" oninput="edicionDeParametros(this.value,'text-otros')"> 
+        </div>
+    </div> 
+    
+  </body>
+  
+    <script>
+
+      
+      function edicionDeParametros(valor,idAEditar){
+          document.getElementById(idAEditar).innerText=valor;
+      };
+      
+      /*
+      document.getElementById("edit-acercade").addEventListener('keyup', (e) => {
+        if (e.key=="Enter"){
+          document.getElementById("edit-acercade").style.display="none"
+        }
+      });
+      */
+
+      function validarSuperuser(){
+         /*   var elementosDeEdicion=document.getElementsByClassName("btn-edit");
+            elementosDeEdicion.forEach(element => {
+                element.style.display="block";
+            });*/
+
+       const collection = document.getElementsByClassName("editBox");
+        for (let i = 0; i < collection.length; i++) {
+            collection[i].style.display="block";
+        }
+        
+        document.getElementById("login").style.display="none";
+        document.getElementById("logout").style.display="block";
+
+      }
+      
+      function logOut(){
+        document.getElementById("login").style.display="block";
+        document.getElementById("logout").style.display="none";
+
+        const collection2 = document.getElementsByClassName("editBox");
+        for (let i = 0; i < collection2.length; i++) {
+            collection2[i].style.display="none";
+        }
+        /*cerrar los editbox, guardar info en DB*/
+
+      }
+      
+      
+     // function cambiarFoto(input,elementoAEditar) {
+
+        /*
+        let archivo = input.files[0];
+        alert(`File name: ${file.name}`); // e.g my.png
+        alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
+        let reader = new FileReader();
+        let elemento = document.getElementById(elementoAEditar);      
+        elemento.src = reader.readAsDataURL(this.files[0]).target.result;
+
+          const reader = new FileReader(input);
+            const uploaded_image = reader.result;
+            document.getElementById("fotoFondo").src = reader.result;
+          reader.readAsDataURL(this.files[0]);
+  
+      }
+      
+    */
+        const image_input_bck = document.getElementById("image-input-bckgrd");
+        image_input_bck.addEventListener("change", function() {
+          const reader = new FileReader();
+          reader.addEventListener("load", () => {
+            //const uploaded_image = reader.result;
+            document.getElementById("fotoFondo").src = reader.result;
+            //`url(${uploaded_image})`;
+          });
+          reader.readAsDataURL(this.files[0]);
+        });      
+        
+
+        const image_input_prof = document.getElementById("image-input-profile");
+        image_input_prof.addEventListener("change", function() {
+          const reader2 = new FileReader();
+          reader2.addEventListener("load", () => {
+            //const uploaded_image = reader.result;
+            document.getElementById("fotoPersonal").src = reader2.result;
+            //`url(${uploaded_image})`;
+          });
+          reader2.readAsDataURL(this.files[0]);
+        });      
+
+    </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </HTML>
