@@ -1,0 +1,73 @@
+.imagenFondo {
+  border-radius: 32px;
+  margin: 10px 10px;
+  padding: 20px;
+  border-color: #0a66c2;
+  }
+
+  div#profile-background img{
+  width: 100%;
+  height: 350px;
+  border-radius: 32px 32px 0 0;
+  }
+
+  .profile-image {
+  border-radius: 50%;
+  width: 152px;
+  height: 152px;
+  margin-top: -80px;
+  z-index: 300;
+  }
+
+  div#info-actions {
+  display: flex;
+  padding-bottom:32px;
+  padding-left:32px;
+  }
+
+  div#info-data {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  div#info-data ul#info-details {
+  width: 232px;
+  list-style: none;
+  flex-shrink: 0;
+  }
+
+
+  div#info-data ul#info-details li a {
+  color: black;
+  display: flex;
+  text-decoration: none;
+  }
+
+  div#info-data ul#info-details li a h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  align-self: center;
+  vertical-align: baseline;
+  }
+
+  div#info-data ul#info-details li a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+  }
+
+  .btn-edit {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 16px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+  .btn-edit:hover {
+  cursor:pointer;
+  }
+
+  .editBox {
+  display:none;
+  }
