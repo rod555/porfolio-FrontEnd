@@ -24,136 +24,23 @@ El doucmento debe encerrarse por completo entre los tags html y los dos principa
 
 
   <body>
+     <main class="container">
+
 -->
 
-   <main class="container">
-    <img src="./logosrequeridos.png">
 
-    <button id="login" style="display:block" onclick="validarSuperuser()" >LogIn Superuser</button>
-    <button id="logout" style="display:none" onclick="logOut()">LogOut</button>
-
-    <div class="card imagenFondo" id="first-card">
-
-        <div id="profile-background">
-          <img id="fotoFondo" src="linktoBckgFotoDB.jpg">
-          <input class="editBox" style="float:right" type="file" id="image-input-bckgrd" accept="image/jpeg, image/png, image/jpg" onselect="cambiarFoto(this.value,'fotoFondo')">
-        </div>
-
-        <div id="info">
-          <img id="fotoPersonal" class="profile-image" src="linktoPersonalFotoDB.jpg">
-          <input class="editBox" type="file" id="image-input-profile" accept="image/jpeg, image/png, image/jpg" onselect="cambiarFoto(this,'fotoPersonal')">
-        </div>
+    <app-encabezado></app-encabezado>
+    <app-acerca-de></app-acerca-de>
+    <app-antecedentes-laborales></app-antecedentes-laborales>
+    <app-educacion></app-educacion>
+    <app-skills></app-skills>
+    <app-proyectos-realizados></app-proyectos-realizados>
+    <app-otros-intereses></app-otros-intereses>
 
 
-        <div id="info-data">
-            <div>
-              <h1>Rodrigo Y</h1>
+<!-- lo quito porque no va en el template del angular
+  </main>
 
-              <div id="info-company">Ingeniero electrico y en electronica, UNLP</div>
-              <div id="info-contact">
-                <span id="residenciaActual">Link to ResidenciaEnDB</span>
-                <input class="editBox" id="edit-residencia" type="text" oninput="edicionDeParametros(this.value,'residenciaActual')">
-              </div>
-            </div>
-
-
-            <ul id="info-details">
-              <li><a href="#">
-                <img src="ico.jpg">
-                <h2>Link to PosicionActualDB</h2>
-                </a>
-              </li>
-              <li><a href="#">
-                <img src="ico.jpg">
-                <h2>Link to EmpresaActualDB</h2>
-              </a>
-              </li>
-            </ul>
-
-        </div>
-
-    </div>
-
-    <!--Acerca de--><div class="card imagenFondo">
-        <div class="card-titles">
-          <h2>Acerca de</h2>
-
-        </div>
-        <div>
-            <p id="text-acercade">Link to PositionEnDB, Información de contacto</p>
-        </div>
-        <div>
-            <input class="editBox" id="edit-acercade" type="text" oninput="edicionDeParametros(this.value,'text-acercade')">
-        </div>
-    </div>
-
-    <!--Antecedentes laborales--><div class="card imagenFondo">
-        <div class="card-titles">
-          <h2>Antecedentes laborales</h2>
-
-        </div>
-        <div>
-            <p id="text-antecedentes">Link a los disitintos antecdentes en la DB</p>
-        </div>
-        <div>
-            <input class="editBox" id="edit-antecedentes" type="text" oninput="edicionDeParametros(this.value,'text-antecedentes')">
-        </div>
-    </div>
-
-    <!--Educacion--><div class="card imagenFondo">
-        <div class="card-titles">
-          <h2>Educacion</h2>
-
-        </div>
-        <div>
-            <p id="text-educacion">Link a los disitintos niveles educactivos en la DB</p>
-        </div>
-        <div>
-            <input class="editBox" id="edit-educacion" type="text" oninput="edicionDeParametros(this.value,'text-educacion')">
-        </div>
-    </div>
-
-    <!--Skilss--><div class="card imagenFondo">
-        <div class="card-titles">
-          <h2>Hard y soft skills</h2>
-
-        </div>
-        <div>
-            <p id="text-skills">Link a los disitintos skills en la DB</p>
-        </div>
-        <div>
-            <input class="editBox" id="edit-skils" type="text" oninput="edicionDeParametros(this.value,'text-skills')">
-        </div>
-    </div>
-
-    <!--Proyectos Realizados--><div class="card imagenFondo">
-        <div class="card-titles">
-          <h2>Proyectos Realizados</h2>
-
-        </div>
-        <div>
-            <p id="text-proyectos">Link a los distintos proyectos en la DB</p>
-        </div>
-        <div>
-            <input class="editBox" id="edit-proyectos" type="text" oninput="edicionDeParametros(this.value,'text-proyectos')"">
-        </div>
-    </div>
-
-    <!--otros Intereses--><div class="card imagenFondo">
-        <div class="card-titles">
-          <h2>Otros intereses</h2>
-
-        </div>
-        <div>
-            <p id="text-otros">Link a los distintos intereses en la DB</p>
-        </div>
-        <div>
-            <input class="editBox" id="edit-otros" type="text" oninput="edicionDeParametros(this.value,'text-otros')">
-        </div>
-    </div>
-   </main>
-
-<!-- loquito porque no va en el template del angular
   </body>
 
     <script>

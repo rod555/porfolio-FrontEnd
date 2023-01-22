@@ -1,0 +1,50 @@
+
+<img src="../../../assets/logosrequeridos.png">
+
+  <button id="login" style="display:block" onclick="validarSuperuser()" >LogIn Superuser</button>
+  <button id="logout" style="display:none" onclick="logOut()">LogOut</button>
+
+  <div class="card imagenFondo" id="first-card">
+
+      <div id="profile-background">
+        <img id="fotoFondo" src="../../../assets/linktoBckgFotoDB.jpg">
+        <input class="editBox" style="float:right" type="file" id="image-input-bckgrd" accept="image/jpeg, image/png, image/jpg" onselect="cambiarFoto(this.value,'fotoFondo')">
+      </div>
+
+      <div id="info">
+        <img id="fotoPersonal" class="profile-image" src="../../../assets/linktoPersonalFotoDB.jpg">
+        <input class="editBox" type="file" id="image-input-profile" accept="image/jpeg, image/png, image/jpg" onselect="cambiarFoto(this,'fotoPersonal')">
+      </div>
+
+
+      <div id="info-data">
+          <div>
+            <h1>Rodrigo Y</h1>
+
+            <div id="info-company">Ingeniero electrico y en electronica, UNLP</div>
+            <div id="info-contact">
+              <span id="residenciaActual">Link to ResidenciaEnDB</span>
+              <input class="editBox" id="edit-residencia" type="text" oninput="edicionDeParametros(this.value,'residenciaActual')">
+            </div>
+          </div>
+
+
+          <ul id="info-details">
+            <li><a href="#">
+              <img src="../../../assets/ico.jpg">
+              <h2>Link to PosicionActualDB</h2>
+              </a>
+            </li>
+            <li><a href="#">
+              <img src="../../../assets/ico.jpg">
+              <h2>Link to EmpresaActualDB</h2>
+            </a>
+            </li>
+          </ul>
+
+      </div>
+
+  </div>
+
+
+
