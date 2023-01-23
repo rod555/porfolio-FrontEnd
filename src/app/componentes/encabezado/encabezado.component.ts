@@ -8,12 +8,16 @@ import { DatosporfolioService } from 'src/app/servicios/datosporfolio.service';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit {
-constructor(private datosporfolio:DatosporfolioService){}
+
+    constructor(private datosporfolio:DatosporfolioService){}
+
+    datosPorfolio:any;
 
     ngOnInit(){
         this.datosporfolio.get_nombre().subscribe(datoslistos =>{
-          console.log(datoslistos);
+          this.datosPorfolio=datoslistos;
           }
         );
     }
-}
+
+  }
