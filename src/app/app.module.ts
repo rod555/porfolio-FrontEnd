@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
@@ -19,10 +21,11 @@ import { OtrosInteresesComponent } from './componentes/otros-intereses/otros-int
     EducacionComponent,
     SkillsComponent,
     ProyectosRealizadosComponent,
-    OtrosInteresesComponent
+    OtrosInteresesComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
