@@ -1,21 +1,27 @@
 {
-	"nombre": "Rodrigo Yaltone",
-	"imagfinalizadoeFondo": "https://png.pngtree.com/thumb_back/fw8300",
-	"imagenParaMostrar": "https://12.wp.com/imagenes.milenio.com/E",
+  "imagenDeFondo": "https://png.pngtree.com/thumb_back/fw8300",
+	"imagenFoto": "https://12.wp.com/imagenes.milenio.com/E",
+
+  "nombre": "Rodrigo Yaltone",
 	"puestoActual": "PuestoActual",
-	"companiaActual": {
+
+  "residenciaActual": "Buenos Aires (Argentina)",
+
+  "companiaActual": {
 		"nombre": "ENRE",
 		"img": "https://es.wikipedia.org/wiki/Ente_Nacional_Regulador_de_la_Electricidad#/media/Archivo:Enre_logo.png",
 		"url": "#"
 	},
+
 	"institucionEducativa": {
 		"nombre": "UNLP",
 		"img": "https://upload.wikimedia.org/wikipedia/commons/7/74/UNLP_Logo_%28cropped%29.svg",
 		"url": "#"
 	},
-	"residenciaActual": "Buenos Aires (Argentina)",
+
 	"acercaDe": "Acerca de mi",
-	"experiencia": [{
+
+  "antecedentesLaborales": [{
 			"puesto": "Profesional",
 			"compania": "ENRE",
 			"img": "https://es.wikipedia.org/wiki/Ente_Nacional_Regulador_de_la_Electricidad#/media/Archivo:Enre_logo.png",
@@ -32,6 +38,8 @@
 			"finalizado": "dic 2005"
 		}
 	],
+
+
 	"educacion": [{
 			"institucion": "UBA",
 			"titulo": "Abogado",
@@ -69,6 +77,11 @@
 			"nota": 86
 		}
 	],
-	"aptitudes": ["aptitud1", "aptitud2"],
-	"logros": ["logro1", "logro2"]
+
+  "skills": ["aptitud1", "aptitud2"],
+
+  "logros": ["logro1", "logro2"],
+
+  "otrosIntereses": ["tango", "teatro"]
+
 }
