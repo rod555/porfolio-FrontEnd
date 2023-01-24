@@ -3,7 +3,7 @@
 	"imagenFoto": "/assets/foto.jpg",
 
   "nombre": "Rodrigo Yaltone",
-	"puestoActual": "PuestoActual",
+	"puestoActual": "Poner aca redes sociales",
 
   "residenciaActual": "Buenos Aires (Argentina)",
 
@@ -19,7 +19,7 @@
 		"url": "#"
 	},
 
-	"acercaDe": "",
+	"acercaDe": "Ingeniero de alma, especialista en alambre y cinta aisladora",
 
   "antecedentesLaborales": [{
 			"puesto": "Profesional",
@@ -94,9 +94,9 @@
     "porcentaje":90
     },
     {
-    "nombre":"Aleman",
-    "tipo":"hard",
-    "porcentaje":45
+    "nombre":"Manitas",
+    "tipo":"soft",
+    "porcentaje":90
     }
   ],
 

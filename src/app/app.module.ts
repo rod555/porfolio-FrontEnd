@@ -12,6 +12,7 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosRealizadosComponent } from './componentes/proyectos-realizados/proyectos-realizados.component';
 import { OtrosInteresesComponent } from './componentes/otros-intereses/otros-intereses.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

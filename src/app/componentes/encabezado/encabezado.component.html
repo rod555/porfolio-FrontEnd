@@ -17,17 +17,44 @@
       </div>
 
 
+
       <div id="info-data">
           <div>
             <h1>{{datosPorfolio.nombre}}</h1>
 
-            <div id="info-company">{{datosPorfolio.puestoActual}}</div>
+
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link"
+                   href="mailto:rod570@hotmail.com"
+                   target="_blank"
+                   >
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                   href="https://www.linkedin.com/in/RY"
+                   target="_blank"
+                   >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                   href="https://github.com/rod555"
+                   target="_blank"
+                   >
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+            </ul>
+
             <div id="info-contact">
               <span id="residenciaActual">{{datosPorfolio.residenciaActual}}</span>
               <input class="editBox" id="edit-residencia" type="text" oninput="edicionDeParametros(this.value,'residenciaActual')">
             </div>
           </div>
-
 
           <ul id="info-details">
             <li><a href="#">
