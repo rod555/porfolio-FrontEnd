@@ -10,7 +10,7 @@ export class SkillsComponent  implements OnInit{
 
   constructor(private datosporfolio:DatosporfolioService){}
 
-  datosPorfolio:any;
+  datosPorfolio:any={};
 
   ngOnInit(){
       this.datosporfolio.get_nombre().subscribe(datoslistos =>{

@@ -78,10 +78,46 @@
 		}
 	],
 
-  "skills": ["aptitud1", "aptitud2"],
+  "skills": [{
+    "nombre":"Ingles",
+    "tipo":"hard",
+    "porcentaje":85
+    },
+    {
+    "nombre":"Aleman",
+    "tipo":"hard",
+    "porcentaje":45
+    },
+    {
+    "nombre":"Pensamiento Lateral",
+    "tipo":"soft",
+    "porcentaje":90
+    },
+    {
+    "nombre":"Aleman",
+    "tipo":"hard",
+    "porcentaje":45
+    }
+  ],
 
-  "logros": ["logro1", "logro2"],
+  "logros": [{
+    "nombre":"logro1",
+    "descripcion":"descripcionlogro1",
+    "fecha":"13-7-1999"
+    },{
+    "nombre":"logro2",
+    "descripcion":"descripcionlogro2",
+    "fecha":"13-7-1990"
+    }
+  ],
 
-  "otrosIntereses": ["tango", "teatro"]
-
+  "otrosIntereses": [{
+    "nombre":"Tango",
+    "experiencia":"7 años"
+    },
+    {
+    "nombre":"Teatro",
+    "experiencia":"11 años"
+    }
+  ]
 }
