@@ -2,11 +2,19 @@
     <!--otros Intereses--><div class="card imagenFondo">
       <div class="card-titles">
         <h2>Otros intereses</h2>
+      </div>
 
-      </div>
       <div>
-          <p id="text-otros">Link a los distintos intereses en la DB</p>
+        <li *ngFor="let interes of datosPorfolio.otrosIntereses" style="list-style:none">
+          <div class="data-container">
+              <div class="list-info">
+                <h3>{{interes.nombre}}</h3>
+                <p> {{interes.experiencia}}</p>
+              </div>
+          </div>
+        </li>
       </div>
+
       <div>
           <input class="editBox" id="edit-otros" type="text" oninput="edicionDeParametros(this.value,'text-otros')">
       </div>

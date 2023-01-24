@@ -3,9 +3,21 @@
         <h2>Proyectos Realizados</h2>
 
       </div>
+
+
       <div>
-          <p id="text-proyectos">Link a los distintos proyectos en la DB</p>
+        <li *ngFor="let proyecto of datosPorfolio.proyectosRealizados" style="list-style:none">
+          <div class="data-container">
+              <div class="list-info">
+                <h3>{{proyecto.nombre}}</h3>
+                <p> {{proyecto.descripcion}}</p>
+                <p> {{proyecto.fecha}}</p>
+              </div>
+          </div>
+        </li>
       </div>
+
+
       <div>
           <input class="editBox" id="edit-proyectos" type="text" oninput="edicionDeParametros(this.value,'text-proyectos')">
       </div>

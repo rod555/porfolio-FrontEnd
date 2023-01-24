@@ -19,7 +19,7 @@
 		"url": "#"
 	},
 
-	"acercaDe": "Acerca de mi",
+	"acercaDe": "",
 
   "antecedentesLaborales": [{
 			"puesto": "Profesional",
@@ -100,7 +100,7 @@
     }
   ],
 
-  "logros": [{
+  "proyectosRealizados": [{
     "nombre":"logro1",
     "descripcion":"descripcionlogro1",
     "fecha":"13-7-1999"

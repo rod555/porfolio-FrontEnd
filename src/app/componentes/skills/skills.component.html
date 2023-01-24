@@ -1,11 +1,20 @@
     <!--Skilss--><div class="card imagenFondo">
       <div class="card-titles">
         <h2>Hard y soft skills</h2>
+      </div>
 
-      </div>
       <div>
-          <p id="text-skills">Link a los disitintos skills en la DB</p>
+        <li *ngFor="let skill of datosPorfolio.skills" style="list-style:none">
+          <div class="data-container">
+              <div class="list-info">
+                <h3>{{skill.nombre}}</h3>
+                <p> {{skill.tipo}}</p>
+                <p>{{skill.porcentaje}}</p>
+              </div>
+          </div>
+        </li>
       </div>
+
       <div>
           <input class="editBox" id="edit-skils" type="text" oninput="edicionDeParametros(this.value,'text-skills')">
       </div>
