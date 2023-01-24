@@ -2,13 +2,24 @@
     <!--Educacion--><div class="card imagenFondo">
       <div class="card-titles">
         <h2>Educacion</h2>
-
       </div>
       <div>
-          <p id="text-educacion">Link a los disitintos niveles educactivos en la DB</p>
+          <li *ngFor="let educacionitem of datosPorfolio.educacion" style="list-style:none">
+            <div class="data-container">
+                <div class="logo-image-container">
+                  <img class="logo-image" [src]="educacionitem.img"/>
+                </div>
+                <div class="list-info">
+                  <div>
+                    <h4>{{educacionitem.titulo}}</h4>
+                    <p> Carrera: {{educacionitem.carrera}} - Promedio: {{educacionitem.nota}}</p>
+                    <p>{{educacionitem.inicio}} - {{educacionitem.finalizado}}</p>
+                  </div>
+                </div>
+            </div>
+          </li>
       </div>
       <div>
           <input class="editBox" id="edit-educacion" type="text" oninput="edicionDeParametros(this.value,'text-educacion')">
       </div>
   </div>
-

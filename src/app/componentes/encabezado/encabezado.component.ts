@@ -12,10 +12,14 @@ export class EncabezadoComponent implements OnInit {
     constructor(private datosporfolio:DatosporfolioService){}
 
     datosPorfolio:any;
+    companiaActual:any;
+    posicionActual:any;
 
     ngOnInit(){
         this.datosporfolio.get_nombre().subscribe(datoslistos =>{
           this.datosPorfolio=datoslistos;
+          this.companiaActual=datoslistos.antecedentesLaborales[0].compania;
+          this.posicionActual=datoslistos.antecedentesLaborales[0].puesto;
           }
         );
     }

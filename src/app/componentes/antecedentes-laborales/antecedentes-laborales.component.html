@@ -1,10 +1,20 @@
     <!--Antecedentes laborales--><div class="card imagenFondo">
       <div class="card-titles">
         <h2>Antecedentes laborales</h2>
-
       </div>
       <div>
-          <p id="text-antecedentes">Link a los disitintos antecdentes en la DB</p>
+          <li *ngFor="let antecedente of datosPorfolio.antecedentesLaborales" style="list-style:none">
+            <div class="data-container">
+                <div class="logo-image-container">
+                  <img class="logo-image" [src]="antecedente.img"/>
+                </div>
+                <div class="list-info">
+                  <h3>{{antecedente.puesto}}</h3>
+                  <p> {{antecedente.compania}}</p>
+                  <p><time>{{antecedente.inicio}}</time> - <time>{{antecedente.finalizado}}</time></p>
+                </div>
+            </div>
+          </li>
       </div>
       <div>
           <input class="editBox" id="edit-antecedentes" type="text" oninput="edicionDeParametros(this.value,'text-antecedentes')">
