@@ -28,4 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Bucket:
 
-_trabajar los css para una presentacion mas 
+_trabajar los css para una presentacion mas estetica
+_falta backend
+_detalle menores como implementar diagramas torta
+_implementar responsividad
+
