@@ -11,6 +11,7 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosRealizadosComponent } from './componentes/proyectos-realizados/proyectos-realizados.component';
 import { OtrosInteresesComponent } from './componentes/otros-intereses/otros-intereses.component';
+import { LoginModalComponent } from './componentes/login-modal/login-modal.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { OtrosInteresesComponent } from './componentes/otros-intereses/otros-int
     SkillsComponent,
     ProyectosRealizadosComponent,
     OtrosInteresesComponent,
+    LoginModalComponent,
   ],
   imports: [
     BrowserModule,

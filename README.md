@@ -81,3 +81,9 @@ modelo de datos
 	"otrosIntereses": [{
 			"nombre":"Tango",
 			"experiencia":""
+
+
+
+direcciones firebase
+Project Console: https://console.firebase.google.com/project/porfolio-frontend-58a4f/overview
+Hosting URL: https://porfolio-frontend-58a4f.web.app
