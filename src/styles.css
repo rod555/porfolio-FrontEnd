@@ -80,3 +80,7 @@ cursor:pointer;
 .editBox {
 display:none;
 }
+
+.editBoxvisible {
+  display:flex;
+}

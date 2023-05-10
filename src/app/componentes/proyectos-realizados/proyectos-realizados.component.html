@@ -19,6 +19,6 @@
 
 
       <div>
-          <input class="editBox" id="edit-proyectos" type="text" oninput="edicionDeParametros(this.value,'text-proyectos')">
+          <input [ngClass]="editmode ? 'editBoxvisible' : 'editBox'" id="edit-proyectos" type="text" oninput="edicionDeParametros(this.value,'text-proyectos')">
       </div>
   </div>

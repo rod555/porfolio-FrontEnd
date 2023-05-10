@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DatosporfolioService } from 'src/app/servicios/datosporfolio.service';
+import { DatosporfolioService} from 'src/app/servicios/datosporfolio.service';
+
+import { GlobalvarService } from 'src/app/servicios/globalvar.service';
 
 @Component({
   selector: 'app-skills',
@@ -8,7 +10,10 @@ import { DatosporfolioService } from 'src/app/servicios/datosporfolio.service';
 })
 export class SkillsComponent  implements OnInit{
 
-  constructor(private datosporfolio:DatosporfolioService){}
+  constructor(private datosporfolio:DatosporfolioService, private variablesglobales: GlobalvarService){}
+
+
+  editmode=this.variablesglobales.editmode;
 
   datosPorfolio:any={};
 

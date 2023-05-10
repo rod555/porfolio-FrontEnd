@@ -12,6 +12,9 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosRealizadosComponent } from './componentes/proyectos-realizados/proyectos-realizados.component';
 import { OtrosInteresesComponent } from './componentes/otros-intereses/otros-intereses.component';
 import { LoginModalComponent } from './componentes/login-modal/login-modal.component';
+import { FormsModule } from "@angular/forms";
+//app.module.ts
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,6 +32,8 @@ import { LoginModalComponent } from './componentes/login-modal/login-modal.compo
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

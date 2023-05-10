@@ -17,6 +17,6 @@
           </li>
       </div>
       <div>
-          <input class="editBox" id="edit-antecedentes" type="text" oninput="edicionDeParametros(this.value,'text-antecedentes')">
+          <input [ngClass]="editmode ? 'editBoxvisible' : 'editBox'" id="edit-antecedentes" type="text" oninput="edicionDeParametros(this.value,'text-antecedentes')">
       </div>
   </div>

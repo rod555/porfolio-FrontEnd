@@ -16,7 +16,7 @@
       </div>
 
       <div>
-          <input class="editBox" id="edit-skils" type="text" oninput="edicionDeParametros(this.value,'text-skills')">
+          <input [ngClass]="editmode ? 'editBoxvisible' : 'editBox'" id="edit-skils" type="text" oninput="edicionDeParametros(this.value,'text-skills')">
       </div>
   </div>
 
