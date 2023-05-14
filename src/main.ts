@@ -45,4 +45,20 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
+
+subir a firebase
+firebase login
+ng biuld
+firebase init
+    configure for firebase hosting
+    hosting angular
+    dist/porfolio-front-end
+    configure as single (y)
+    automatics with github (n)
+    overwrite (n)
+firebase deploy
+
+Project Console: https://console.firebase.google.com/project/porfolio-b58f4/overview
+Hosting URL: https://porfolio-b58f4.web.app
+
 */
