@@ -46,7 +46,7 @@ export class EncabezadoComponent implements OnInit {
     }
 
 
-    public validarSuperuser(content: any){
+    public openmodallogeo(content: any){
       console.log("POP");
       this.modalService.open(content, {ariaLabelledBy: 'ordenWiring'}).result.then((result) => {
         this.closeResult = `Closed with: ${result}`;
@@ -82,9 +82,9 @@ export class EncabezadoComponent implements OnInit {
       }
 
       alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.userLog.value))
-      console.log("wer");
-      console.log(this.userLog.get('email'));
-      console.log(this.userLog.get('pass'));
+
+      console.log(this.userLog.get('email')?.value);
+      console.log(this.userLog.get('password')?.value);
     }
   }
 
