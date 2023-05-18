@@ -1,6 +1,7 @@
 
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit } from '@angular/core';
+import { DatosporfolioService } from 'src/app/servicios/datosporfolio.service';
 
 @Component({
   selector: 'app-login-modal',
@@ -37,7 +38,7 @@ export class LoginModalComponent {
       }
     }*/
     closeResult: string="";
-    constructor(private modalService: NgbModal) {}
+    constructor(private modalService: NgbModal, private ConsumirDatos:DatosporfolioService) {}
 
 
 

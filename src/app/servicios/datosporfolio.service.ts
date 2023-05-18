@@ -12,8 +12,17 @@ export class DatosporfolioService {
   constructor(private http:HttpClient) { }
 
   get_nombre():Observable<any>{
-     return this.http.get('./assets/data/mockdatos.json');
+
+      //text: String;
+      //text="m";
+      //const headers = new HttpHeaders().set('Content-Type', 'text/plain; charset=utf-8');
+      //console.log(this.http.get('https://porfolio-backend-xy7f.onrender.com/'));
+       return this.http.get('https://porfolio-backend-xy7f.onrender.com/');
+
   }
-
-
 }
+
+/*
+  return this.http.get('./assets/data/mockdatos.json');
+  */
+

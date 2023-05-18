@@ -60,5 +60,10 @@ firebase deploy
 
 Project Console: https://console.firebase.google.com/project/porfolio-b58f4/overview
 Hosting URL: https://porfolio-b58f4.web.app
+https://github.com/rod555/porfolio-FrontEnd
+
+console: https://dashboard.render.com/web/srv-chglss3hp8u065oavn80
+hosting:  https://porfolio-backend-xy7f.onrender.com
+https://github.com/rod555/porfolio-BackEnd
 
 */

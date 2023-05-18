@@ -85,6 +85,7 @@ export class EncabezadoComponent implements OnInit {
 
       console.log(this.userLog.get('email')?.value);
       console.log(this.userLog.get('password')?.value);
+      //console.log(this.datosporfolio);
     }
   }
 
